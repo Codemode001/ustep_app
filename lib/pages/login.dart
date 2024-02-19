@@ -71,10 +71,10 @@ class _LoginState extends State<Login> {
                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => Home()));
               },
                   style: ElevatedButton.styleFrom(
-                    minimumSize: Size(270, 50), // Set minimum width and height
-                    primary:Color(0xFF201B50), // Set background color
+                    minimumSize: Size(270, 50),
+                    primary:Color(0xFF201B50),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(22), // Set border radius
+                      borderRadius: BorderRadius.circular(22),
                     ),
                   ),
                   child: Text("Login", style: TextStyle(

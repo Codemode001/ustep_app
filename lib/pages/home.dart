@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:ustep_app/pages/profile.dart';
+
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -23,7 +25,15 @@ class _HomeState extends State<Home> {
             padding: EdgeInsets.only(right: 10),
             child: Row(
               children: [
-                Icon(Icons.person_pin, color: Colors.white),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => Profile()));
+                  },
+                  child: Icon(
+                    Icons.person_pin,
+                    color: Colors.white,
+                  ),
+                )
               ],
             ),
           ),
