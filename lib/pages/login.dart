@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:ustep_app/pages/home.dart';
+
 class Login extends StatefulWidget {
   const Login({super.key});
 
@@ -65,7 +67,9 @@ class _LoginState extends State<Login> {
                 ),
               ),
               SizedBox(height: 40,),
-              ElevatedButton(onPressed: () {},
+              ElevatedButton(onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Home()));
+              },
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(270, 50), // Set minimum width and height
                     primary:Color(0xFF201B50), // Set background color
