@@ -56,6 +56,11 @@ flutter:
   assets:
     - assets/ustp-logo.jpg
     - assets/ustp.png
+    - assets/appdev.jpg
+    - assets/ustp-char.png
+    - assets/gdev.png
+    - assets/lycan-fest.jpg
+    - assets/uda.jpg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
