@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ustep_app/pages/edit_profile.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -86,6 +87,7 @@ class _ProfileState extends State<Profile> {
             ),
             SizedBox(height: 60,),
             ElevatedButton(onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => EditProfile()));
             },
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(270, 50),
